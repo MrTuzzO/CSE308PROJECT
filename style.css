@@ -1,0 +1,102 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    font-size: 16px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #353333 url(img/main_bg.jpg) no-repeat center;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    font-weight: bold;
+}
+
+input {
+    height: 30px;
+    width: 401px;
+    margin: 10px 0;
+    padding-left: 10px;
+    background: transparent;
+    border-radius: 3px;
+}
+
+.container button {
+    display: block;
+    width: 200px;
+    margin: 10px 0;
+    padding: 8px 10px;
+    font-weight: bold;
+    color: #000;
+}
+#functions>button{
+    width: 300px;
+}
+
+footer p {
+    color: #ccc;
+    font-weight: normal;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 30px;
+    font-size: 14px;
+    /* display: none; */
+}
+
+footer a {
+    color: #47a1d9;
+    font-size: 14px;
+}
+
+/* Result popup design */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    height: 600px;
+    background-color: #31b4df3f;
+
+    backdrop-filter: blur(8px);
+
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid #000000;
+    padding: 0 7px 2px 7px;
+}
+
+#result {
+    display: grid;
+    place-items: center;
+    height: 600px;
+}
+
+#BitStuffing,
+#CharStuffing {
+    display: flex;
+    flex-direction: column;
+}
